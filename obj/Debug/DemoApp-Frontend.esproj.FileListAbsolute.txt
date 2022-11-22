@@ -1,0 +1,2 @@
+F:\Arbeit\Pact\DemoApp\DemoApp-Frontend\obj\Debug\DemoApp-Frontend.esproj.SuggestedBindingRedirects.cache
+F:\Arbeit\Pact\DemoApp\DemoApp-Frontend\obj\Debug\DemoApp-Frontend.esproj.CoreCompileInputs.cache

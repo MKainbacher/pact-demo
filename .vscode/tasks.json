@@ -3,9 +3,31 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "serve",
       "type": "npm",
       "script": "start",
       "isBackground": true,
+      "group": "build",
+      "problemMatcher": {
+        "owner": "typescript",
+        "pattern": "$tsc",
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": {
+            "regexp": "(.*?)"
+          },
+          "endsPattern": {
+            "regexp": "bundle generation complete"
+          }
+        }
+      }
+    },
+    {
+      "label": "serve: standalone",
+      "type": "npm",
+      "script": "start:standalone",
+      "isBackground": true,
+      "group": "build",
       "problemMatcher": {
         "owner": "typescript",
         "pattern": "$tsc",
@@ -24,6 +46,7 @@
       "type": "npm",
       "script": "test",
       "isBackground": true,
+      "group": "test",
       "problemMatcher": {
         "owner": "typescript",
         "pattern": "$tsc",
